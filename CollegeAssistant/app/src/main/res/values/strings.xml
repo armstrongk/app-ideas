@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CollegeAssistant</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="register_user">Register User</string>
+    <string name="already_registered_sign_in_here">already registered sign in here</string>
+    <string name="enter_your_email">Enter your Email</string>
+</resources>

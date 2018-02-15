@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">College</string>
+    <string name="title_activity_houses">Houses</string>
+    <string name="reading">New Reading</string>
+    <string name="payment">Add Payment</string>
+    <string name="cost">Set Unit Cost</string>
+    <string name="title_activity_house_transaction">House Transaction</string>
+    <string name="tenant">Attach Tenant</string>
+</resources>

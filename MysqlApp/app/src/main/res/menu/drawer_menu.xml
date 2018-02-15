@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_id"
+            android:title="home"
+            android:icon="@drawable/ic_arrow_downward_black_24dp">
+        </item>
+        <item
+            android:id="@+id/message_id"
+            android:title="home"
+            android:icon="@drawable/ic_message_black_24dp">
+        </item>
+        <item
+            android:id="@+id/setting_id"
+            android:title="home"
+            android:icon="@drawable/ic_build_black_24dp">
+        </item>
+    </group>
+    <item
+        android:title="social">
+        <menu>
+            <item
+                android:title="Add to group"
+                android:id="@+id/add_to_group"
+                android:icon="@drawable/ic_people_outline_black_24dp">
+
+            </item>
+            <item
+                android:title="group"
+                android:id="@+id/group"
+                android:icon="@drawable/ic_account_circle_black_24dp">
+
+            </item>
+            <item
+                android:title="share"
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_black_24dp">
+
+            </item>
+        </menu>
+    </item>
+</menu>

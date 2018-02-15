@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Add New Payment"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:textSize="25sp"
+        android:id="@+id/dummy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dummy"
+        android:paddingLeft="5dp"
+        android:textColor="@color/apartment"
+        android:hint="Current Balance:"/>
+
+    <TextView
+        android:textSize="25sp"
+        android:id="@+id/bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dummy"
+        android:hint="Balance"
+        android:paddingLeft="3dp"
+        android:layout_toEndOf="@+id/dummy1"
+        android:layout_toRightOf="@+id/dummy1"/>
+
+    <EditText
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/payment"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bal"
+        android:hint="Amount Paid"/>
+
+</RelativeLayout>

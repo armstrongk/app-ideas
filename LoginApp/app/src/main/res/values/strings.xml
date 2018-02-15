@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="login">login</string>
+    <string name="user_name">user name</string>
+    <string name="name">Name</string>
+    <string name="passwod">passwod</string>
+    <string name="password">password</string>
+    <string name="attempts">attempts</string>
+    <string name="loginz">login</string>
+    <string name="name_text">name</string>
+    <string name="welcome_to_second_page">WELCOME TO SECOND PAGE</string>
+</resources>

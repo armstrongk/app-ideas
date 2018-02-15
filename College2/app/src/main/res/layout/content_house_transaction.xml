@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_house_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.abt.powertally.HouseTransaction"
+    tools:showIn="@layout/activity_house_transaction">
+
+    <RelativeLayout
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="House"
+            android:textColor="@color/apartment"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/dummy4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Meter No:"
+            android:textColor="@color/apartment"
+            android:textSize="20sp"
+            android:layout_below="@+id/hse"/>
+
+        <TextView
+            android:id="@+id/mtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Meter No:"
+            android:textSize="20sp"
+            android:layout_below="@+id/hse"
+            android:layout_toEndOf="@+id/dummy4"
+            android:layout_toRightOf="@+id/dummy4"/>
+
+        <TextView
+            android:id="@+id/dummy5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Current Reading"
+            android:textColor="@color/apartment"
+            android:textSize="20sp"
+            android:layout_below="@+id/mtr"/>
+
+        <TextView
+            android:id="@+id/curRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:text="Current Reading"
+            android:textSize="20sp"
+            android:layout_below="@+id/mtr"
+            android:layout_toEndOf="@+id/dummy5"
+            android:layout_toRightOf="@+id/dummy5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/dummy5"
+            android:background="#000000"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dummy6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_below="@+id/dummy"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/dummy7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20sp"
+        android:textColor="@color/apartment"
+        android:layout_below="@+id/dummy6"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/dummy8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textColor="@color/apartment"
+        android:textSize="20sp"
+        android:layout_below="@+id/dummy6"
+        android:paddingTop="5dp"
+        android:gravity="right"
+        android:paddingRight="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/transactions"
+        android:layout_below="@+id/dummy8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dummy10"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_above="@+id/total"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/dummy10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Paid In"
+        android:textColor="@color/apartment"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:layout_above="@+id/dummy9"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textStyle="bold"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:layout_above="@+id/dummy9"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:layout_above="@+id/balance"
+        android:background="#000000"/>
+
+    <TextView
+        android:id="@+id/dummy9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:textColor="@color/apartment"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textSize="20sp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:gravity="right"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

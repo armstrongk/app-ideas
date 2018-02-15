@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingLeft="5dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imge"
+            android:layout_marginTop="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/a"/>
+
+        <TextView
+            android:id="@+id/apartName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/apartment"
+            android:textSize="20sp"
+            android:text="Apartment Name"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_toEndOf="@+id/imge"
+            android:layout_toRightOf="@+id/imge"/>
+
+        <TextView
+            android:id="@+id/apartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/apartName"
+            android:textSize="15sp"
+            android:text="Location"
+            android:paddingLeft="10dp"
+            android:layout_toEndOf="@+id/imge"
+            android:layout_toRightOf="@+id/imge"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hNum"
+            android:text="Number of Houses: "
+            android:layout_below="@+id/apartLocation"
+            android:textSize="15sp"
+            android:gravity="bottom|end"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
